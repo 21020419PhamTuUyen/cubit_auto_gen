@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      module_generator|module_builder:
+        enabled: true
+
+builders:
+  module_generator|module_builder:
+    import: "package:module_generator/module_generator.dart"
+    builder_factories: ["moduleBuilder"]
+    build_extensions: {"$lib$": [".ignore"]}
+    auto_apply: root_package
+    build_to: source

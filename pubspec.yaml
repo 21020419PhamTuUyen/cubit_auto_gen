@@ -1,0 +1,14 @@
+name: module_generator
+description: Custom builder to auto-generate module files (cubit, model, repo...)
+version: 0.0.1
+publish_to: "none"
+
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+
+dependencies:
+  build:
+  source_gen:
+
+dev_dependencies:
+  build_runner:
